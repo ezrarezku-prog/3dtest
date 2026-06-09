@@ -3,9 +3,16 @@ using UnityEngine;
 public class Drop : MonoBehaviour
 {
     [SerializeField] float timeToWait = 2f;
+
+    MeshRenderer myMeshRenderer;
+    Rigidbody myRigidbody;
     void Start()
     {
-        
+        myMeshRenderer = GetComponent<MeshRenderer>();
+        myRigidbody = GetComponent<Rigidbody>();
+
+        myMeshRenderer.enabled = false;
+        myRigidbody.useGravity = false;
     }
 
     
@@ -13,7 +20,10 @@ public class Drop : MonoBehaviour
     {
         if (Time.time > timeToWait)
         {
-            GetComponent<Rigidbody>().useGravity = true;
+            myRigidbody.useGravity = true;
+            myMeshRenderer.enabled = true;
         }
+        
+        
     }
 }

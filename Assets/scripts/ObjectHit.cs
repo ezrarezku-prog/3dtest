@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision other)
     {
-        GetComponent<AudioSource>().Play();
+        
+        if (other.gameObject.tag == "Player")
+        {
+            GetComponent<AudioSource>().Play();
+            gameObject.tag = "Hit";
+        }
     }
 }
