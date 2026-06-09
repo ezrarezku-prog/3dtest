@@ -4,10 +4,18 @@ public class Scorer : MonoBehaviour
 {
 
     int hits = 0;
-    void OnCollisionEnter(Collision collision)
+    int lives = 60;
+    void OnCollisionEnter(Collision other)
     {
-        hits++;
-        Debug.Log("Hits: " + hits);
+        
+
+        if (other.gameObject.tag != "Hit")
+        {
+            hits++;
+            Debug.Log("Hits: " + hits);
+            lives -= 10;
+            Debug.Log("Lives: " + lives);
+        }
     }
 
     
