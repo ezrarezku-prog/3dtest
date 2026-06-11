@@ -9,14 +9,18 @@ public class Scorer : MonoBehaviour
     {
         
 
-        if (other.gameObject.tag != "Hit")
+        if (other.gameObject.tag != "Hit" && other.gameObject.tag != "Ground")
         {
             hits++;
             Debug.Log("Hits: " + hits);
             lives -= 10;
             Debug.Log("Lives: " + lives);
         }
+
+       
     }
+
+
 
     
 }
