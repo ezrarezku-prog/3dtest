@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &14628045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 14628047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1504871420}
+        m_TargetAssemblyTypeName: Restart, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &14628047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10780,6 +10792,7 @@ GameObject:
   - component: {fileID: 1504871412}
   - component: {fileID: 1504871418}
   - component: {fileID: 1504871419}
+  - component: {fileID: 1504871420}
   - component: {fileID: 1504871417}
   m_Layer: 0
   m_Name: Player
@@ -10935,6 +10948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Scorer
   livesText: {fileID: 828665345}
   GameOverText: {fileID: 872256882}
+  restartButton: {fileID: 14628046}
 --- !u!114 &1504871419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10948,6 +10962,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Push
   forceMagnitude: 1
+--- !u!114 &1504871420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504871411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4b79f4d92512b48895cc9aa96a0dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Restart
 --- !u!1 &1510402188
 GameObject:
   m_ObjectHideFlags: 0

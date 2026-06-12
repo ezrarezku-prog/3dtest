@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Scorer : MonoBehaviour
 {
@@ -7,12 +8,15 @@ public class Scorer : MonoBehaviour
     [SerializeField] TMP_Text livesText;
     [SerializeField] TMP_Text GameOverText;
 
+    [SerializeField] Button restartButton;
+
     int hits = 0;
     int lives = 100;
 
     void Start()
     {
         GameOverText.enabled = false;
+        restartButton.gameObject.SetActive(false);
     }
     void OnCollisionEnter(Collision other)
     {
@@ -30,6 +34,7 @@ public class Scorer : MonoBehaviour
        if (lives == 0)
         {
             GameOverText.enabled = true;
+            restartButton.gameObject.SetActive(true);
             GetComponent<Mover>().enabled = false;
         }
     }
