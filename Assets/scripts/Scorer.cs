@@ -9,6 +9,9 @@ public class Scorer : MonoBehaviour
     [SerializeField] TMP_Text GameOverText;
 
     [SerializeField] Button restartButton;
+    [SerializeField] AudioClip GameOverSound1;
+   
+
 
     int hits = 0;
     int lives = 100;
@@ -34,6 +37,8 @@ public class Scorer : MonoBehaviour
        if (lives == 0)
         {
             GameOverText.enabled = true;
+            GetComponent<AudioSource>().PlayOneShot(GameOverSound1);
+        
             restartButton.gameObject.SetActive(true);
             GetComponent<Mover>().enabled = false;
         }
