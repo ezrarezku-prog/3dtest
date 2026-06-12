@@ -17,6 +17,7 @@ public class Win : MonoBehaviour
         if (collision.gameObject.tag == "Goal")
         {
             YouWinText.enabled = true;
+            GetComponent<AudioSource>().Play();
         }
     }
 
