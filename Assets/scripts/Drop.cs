@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Drop : MonoBehaviour
 {
-    [SerializeField] float timeToWait = 2f;
+    
 
     MeshRenderer myMeshRenderer;
     Rigidbody myRigidbody;
@@ -16,14 +16,15 @@ public class Drop : MonoBehaviour
     }
 
     
-    void Update()
-    {
-        if (Time.time > timeToWait)
-        {
-            myRigidbody.useGravity = true;
-            myMeshRenderer.enabled = true;
-        }
+
+    //void Update()
+   // {
+       // if (Time.time > timeToWait)
+       // {
+           // myRigidbody.useGravity = true;
+          //  myMeshRenderer.enabled = true;
+      //  }
         
         
-    }
+   // }
 }
