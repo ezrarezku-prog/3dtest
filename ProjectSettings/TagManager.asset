@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hit
   - Ground
+  - Goal
+  - Ball
   layers:
   - Default
   - TransparentFX
