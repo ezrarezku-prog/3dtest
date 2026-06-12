@@ -25,7 +25,7 @@ public class Scorer : MonoBehaviour
     {
         
 
-        if (other.gameObject.tag != "Hit" && other.gameObject.tag != "Ground")
+        if (other.gameObject.tag != "Hit" && other.gameObject.tag != "Ground" && other.gameObject.tag != "Goal")
         {
             hits++;
             Debug.Log("Hits: " + hits);
