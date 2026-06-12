@@ -1209,7 +1209,7 @@ Transform:
   m_GameObject: {fileID: 72394929}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16466646, y: 0, z: 0, w: 0.98634934}
-  m_LocalPosition: {x: -4.84, y: 5.62, z: -37.3}
+  m_LocalPosition: {x: -5.1, y: 5.99, z: -45.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4157,7 +4157,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16466646, y: 0, z: 0, w: 0.98634934}
-  m_LocalPosition: {x: -4.84, y: 5.62, z: -37.3}
+  m_LocalPosition: {x: -5.1, y: 5.99, z: -45.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6794,7 +6794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &549104553
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14499,8 +14499,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3865387857548848110, guid: a6127c022565ea946804415a1af07b12, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1101472911}
   m_SourcePrefab: {fileID: 100100000, guid: a6127c022565ea946804415a1af07b12, type: 3}
+--- !u!1 &1101472910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3865387857548848110, guid: a6127c022565ea946804415a1af07b12, type: 3}
+  m_PrefabInstance: {fileID: 1101472909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1101472911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101472910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e681ce8dd788e6c439c7eb9bfa56d538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Win
+  YouWinText: {fileID: 549104554}
 --- !u!1 &1103409481
 GameObject:
   m_ObjectHideFlags: 0
@@ -21124,7 +21145,7 @@ Transform:
   m_GameObject: {fileID: 1504871411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.84, y: 0.9, z: -26.8}
+  m_LocalPosition: {x: -5.1, y: 1.27, z: -34.6}
   m_LocalScale: {x: 2.2927568, y: 2.039922, z: 2.335659}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25232,7 +25253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4227770572395643567, guid: 7db570eaa30856d4990fda8502c9ce04, type: 3}
       propertyPath: m_TagString
-      value: Ball
+      value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 4227770572395643567, guid: 7db570eaa30856d4990fda8502c9ce04, type: 3}
       propertyPath: m_StaticEditorFlags
